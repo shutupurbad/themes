@@ -5,15 +5,17 @@
  * @description A skidded theme
  * @authorId 748741808439427104
 */
+
 /* IMPORT SOURCE CODE */
 @import url("https://discord-custom-covers.github.io/usrbg/snippets/modals.css");
 @import url("https://discord-custom-covers.github.io/usrbg/snippets/userPopouts.css");
-@import url("https://discordstyles.github.io/discord-dyslexia/src/base.css");
-@import url("https://raw.githack.com/Freeplayg/Discord-TeardropMessages/main/theme.css");
-@import url("https://raw.githack.com/leeprky/MyThemesBasesStuffYeah/lode/round-stuff.css");
-@import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/SettingsModal/SettingsModal.css");
-@import url("https://commandcrafterhd.github.io/Fallout4TerminalTheme/css/main.css");
-@import url("https://commandcrafterhd.github.io/DiscordDarkNeon/css/hideUsers.css");
+@import url(https://discordstyles.github.io/discord-dyslexia/src/base.css);
+@import url(https://raw.githack.com/Freeplayg/Discord-TeardropMessages/main/theme.css);
+@import url(https://raw.githack.com/leeprky/MyThemesBasesStuffYeah/lode/round-stuff.css);
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/SettingsModal/SettingsModal.css);
+@import url('https://commandcrafterhd.github.io/Fallout4TerminalTheme/css/main.css');
+@import url('https://commandcrafterhd.github.io/DiscordDarkNeon/css/hideUsers.css');
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/ServerColumns/ServerColumns.css);
 
 :root {
   --background: #454343 !important;
@@ -242,27 +244,19 @@ div[data-list-item-id="guildsnav___guild-discover-button"] svg:hover{
 
 .avatarSpeaking-2c8-9i { display: none; } 
 
-/* Mitigate discord desktop/web "crash/freeze" gif */
-.embedVideo-3nf0O9[href$="tornadus.net/orange"] {
-    display: none;
+/* gfycat sucks*/
+.embedVideo-3nf0O9[href*="giant.gfycat.com"] {
+  display: none;
 }
-/* Mitigate discord desktop/web "crash/freeze" gif */
-.embedVideo-3nf0O9[href$='gfycat.com/maturesoggyflee'] {
-    display: none;
+/* gfycat sucks*/
+.embedVideo-3nf0O9[href*="thumb.gfycat.com"] {
+  display: none;
 }
-/* Mitigate discord desktop/web "crash/freeze" gif */
-.embedVideo-3nf0O9[href$='giant.gfycat.com/FrigidMediocreHornedtoad.mp4'] {
-    display: none;
+/* gfycat sucks*/
+.embedVideo-3nf0O9[href*="gfycat.com"] {
+  display: none;
 }
 
-/* Mitigate discord desktop/web "crash/freeze" gif */
-.embedVideo-3nf0O9[href$='gfycat.com/forsakenfamousbushbaby'] {
-    display: none;
-}
-/* Mitigate discord desktop/web "crash/freeze" gif */
-.embedVideo-3nf0O9[href$='gfycat.com/frequentfancyborzoi'] {
-    display: none;
-}
 
 .styleFlexible-wGDiIL {
   min-width: 250px;
@@ -297,12 +291,12 @@ div[data-list-item-id="guildsnav___guild-discover-button"] svg:hover{
 }
 .childWrapper-anI2G9:hover > .homeIcon-FuNwkv,
 .wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9 > .homeIcon-FuNwkv {
-  animation: spinny-rainbow-logo 2s linear infinite;
+  animation: spinny-rainbow-logo 7.5s linear infinite;
 }
 
 .childWrapper-anI2G9,
 .childWrapper-anI2G9:hover {
-  background-color: rgba(0, 0, 0, .2) !important;
+  background-color: rgba(0, 0, 0, .2);
 }
 
 /* User popout animation */
@@ -2702,4 +2696,45 @@ html.theme-light #app-mount .container-16j22k .problems-3mgf6w a.statusLink-gFXh
 }
 #app-mount .wrapper-3Q5DdO .g-recaptcha {
   margin: var(--spacing-double) 0;
+}
+
+.barButtonBase-2uLO1z,
+.unreadPill-2HyYtt,
+.channel-2QD9_O:hover .linkButtonIcon-Mlm5d6,
+.channel-2QD9_O:hover .name-uJV0GL,
+.channel-2QD9_O:hover .subText-1KtqkB,
+.isUnread-3Ef-o9 .content-1o0f9g,
+.icon-1ihkOt,
+.bar-30k2ka,
+.modeSelected-346R90:hover .icon-1DeIlz,
+.modeSelected-346R90:hover .name-23GUGE,
+.modeSelected-346R90:hover .actionIcon-PgcMM2,
+.containerDefault--pIXnN:hover .icon-1DeIlz,
+.containerDefault--pIXnN:hover .name-23GUGE,
+.containerDefault--pIXnN:hover .actionIcon-PgcMM2,
+.clickable-3rdHwn .icon-22AiRD:hover .strikethrough-3Wiitd,
+.layout-2DM8Md:hover .avatar-3uk_u9,
+.layout-2DM8Md:hover .name-uJV0GL,
+.colorDefault-2K3EoJ .check-1JyqgN,
+.item-1tOPte:hover .colorDefault-2K3EoJ .checkbox-3s5GYZ,
+.searchOption-zQ-1l6:hover .filter-3Y_im-,
+.option-96V44q:hover .filter-3Y_im-,
+.searchOption-zQ-1l6:hover .answer-1n6g43,
+.option-96V44q:hover .answer-1n6g43,
+.option-96V44q:hover .nonText-3CRkO {
+  color: var(--accent-color-dark);
+}
+
+.channelName-1JRO3C {
+  background: var(--background-color-main);
+  color: var(--text-color);
+}
+
+:root {
+	--columns:			2;							/* default:	3					(amount of servercolumns)																		*/
+	
+	--guildsize:		50;							/* default:	50					(serversize in pixel)																			*/
+	--guildgap:			3;							/* default:	3					(top/bottom gap between servers in pixel)														*/
+	
+	--aligndms:			1;							/* default:	0					(should DMs be aligned in columns: 0 = no, 1 = yes)												*/
 }
