@@ -16,6 +16,25 @@
 @import url('https://commandcrafterhd.github.io/Fallout4TerminalTheme/css/main.css');
 @import url('https://commandcrafterhd.github.io/DiscordDarkNeon/css/hideUsers.css');
 @import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/ServerColumns/ServerColumns.css);
+@import url(https://raw.githack.com/voidfill/compacted-userarea/main/src/base.css);
+
+:root {
+    /*default: var(--background-tertiary);*/
+    --cu-serverlistbg: var(--background-tertiary);
+
+    /*default: var(--background-tertiary);*/
+    --cu-topbarbg: var(--background-tertiary);
+
+    /*default: var(--background-modifier-accent);*/
+    --cu-dividercolor: var(--background-modifier-accent);
+
+    /*set below to a value between 0 and 1 to have the statuspicker width be respective to the channelwidth*/
+    /*for example 0.5 would be half of the channels*/
+    --cu-statuspickerwidth: 1;
+
+    /*set below to 0 to not have a divider*/
+    --cu-divider: 1;
+}
 
 :root {
   --background: #454343 !important;
@@ -80,14 +99,6 @@ display:none;}
 .allow-1PzSY3.selected-2YhbGh {background: #43B581 !important;}
 .allow-1PzSY3.selected-2YhbGh:hover {background: #61D09A !important;}
 
-@keyframes spindefault {
-   from {
-      transform:rotate(0deg);
-   }
-   to {
-      transform:rotate(360deg);
-   }
-}
 .circleIcon-LvPL6c:hover{
    animation: spindefault 1s linear infinite;
 }
@@ -269,36 +280,6 @@ div[data-list-item-id="guildsnav___guild-discover-button"] svg:hover{
 }
 .botText-1526X_::after { content: 'TO'; }
 
-@keyframes spinny-rainbow-logo {
-  0%   { transform: rotate(0deg); }
-  5%   { color: mediumvioletred; }
-  10%  { color: red; }
-  15%  { color: orangered; }
-  25%  { color: gold; }
-  35%  { color: greenyellow; }
-  40%  { color: limegreen; }
-  45%  { color: mediumspringgreen; }
-  50%  { color: aquamarine; }
-  55%  { color: darkturquoise; }
-  65%  { color: dodgerblue; }
-  70%  { color: cornflowerblue; }
-  75%  { color: mediumslateblue; }
-  80%  { color: mediumorchid; }
-  85%  { color: fuchsia; }
-  90%  { color: plum; }
-  95%  { color: deeppink; }
-  100% { transform: rotate(360deg); }
-}
-.childWrapper-anI2G9:hover > .homeIcon-FuNwkv,
-.wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9 > .homeIcon-FuNwkv {
-  animation: spinny-rainbow-logo 7.5s linear infinite;
-}
-
-.childWrapper-anI2G9,
-.childWrapper-anI2G9:hover {
-  background-color: rgba(0, 0, 0, .2);
-}
-
 /* User popout animation */
 .headerPlaying-j0WQBV.header-2BwW8b, .headerSpotify-zpWxgT.header-2BwW8b, .headerStreaming-2FjmGz.header-2BwW8b, .headerXbox-3G-4PF.header-2BwW8b { padding-bottom: 30px;}.headerPlaying-j0WQBV.header-2BwW8b:after, .headerSpotify-zpWxgT.header-2BwW8b:after, .headerStreaming-2FjmGz.header-2BwW8b:after, .headerXbox-3G-4PF.header-2BwW8b:after { background: url('https://nyri4.github.io/Comfy/assets/wave.png'); background-size: 250px 20px; animation: animate 6s linear infinite !important; opacity: 1 !important;}.header-2BwW8b:after, .headerPlaying-j0WQBV:before, .headerSpotify-zpWxgT:before, .headerStreaming-2FjmGz:before, .headerXbox-3G-4PF:before { position: absolute;content: "";bottom: -1px;left: 0;width: 250px;height: 20px;z-index: -1;animation: animate2 4s linear infinite;animation-delay: 0s;opacity: 0.5;}.headerPlaying-j0WQBV:before { background: url('https://nyri4.github.io/Comfy/assets/wave_playing.png'); background-size: 250px 20px;}.headerSpotify-zpWxgT:before { background: url('https://nyri4.github.io/Comfy/assets/wave_spotify.png'); background-size: 250px 20px;}.headerStreaming-2FjmGz:before { background: url('https://nyri4.github.io/Comfy/assets/wave_streaming.png'); background-size: 250px 20px;}.headerXbox-3G-4PF:before { background: url('https://nyri4.github.io/Comfy/assets/wave_xbox.png'); background-size: 250px 20px;}@keyframes animate { 0% { background-position-x: 0;} 100% { background-position-x: 250px;}}@keyframes animate2 {0% { background-position-x: 250px; } 100% { background-position-x: 0px;}}
 
@@ -321,20 +302,6 @@ div[data-list-item-id="guildsnav___guild-discover-button"] svg:hover{
 }
 .css-ix84ef-menu {
   background: var(--background-secondary-alt);
-}
-
-@keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-.button-14-BFJ:hover {
-  animation: rotation 1.2s 1 linear;
-  background-color: transparent !important;
-;
 }
 
 /* BUBBLY WUBBLIES */
@@ -2733,7 +2700,7 @@ html.theme-light #app-mount .container-16j22k .problems-3mgf6w a.statusLink-gFXh
 :root {
 	--columns:			2;							/* default:	3					(amount of servercolumns)																		*/
 	
-	--guildsize:			45;							/* default:	50					(serversize in pixel)																			*/
+	--guildsize:		45;							/* default:	50					(serversize in pixel)																			*/
 	--guildgap:			3;							/* default:	3					(top/bottom gap between servers in pixel)														*/
 	
 	--aligndms:			1;							/* default:	0					(should DMs be aligned in columns: 0 = no, 1 = yes)												*/
