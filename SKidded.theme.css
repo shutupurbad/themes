@@ -1,7 +1,7 @@
 /**
  * @name SKidded
  * @author uber#4274
- * @version 1.0f
+ * @version 1.0h
  * @description A skidded theme
  * @authorId 748741808439427104
 */
@@ -267,8 +267,10 @@ div[data-list-item-id="guildsnav___guild-discover-button"] svg:hover{
 .embedVideo-3nf0O9[href*="gfycat.com"] {
   display: none;
 }
-
-
+/* gfycat sucks*/
+.embedVideo-3nf0O9[href*="thumbs.gfycat.com"] {
+  display: none;
+}
 .styleFlexible-wGDiIL {
   min-width: 250px;
 }
@@ -279,9 +281,6 @@ div[data-list-item-id="guildsnav___guild-discover-button"] svg:hover{
     color: blue;
 }
 .botText-1526X_::after { content: 'TO'; }
-
-/* User popout animation */
-.headerPlaying-j0WQBV.header-2BwW8b, .headerSpotify-zpWxgT.header-2BwW8b, .headerStreaming-2FjmGz.header-2BwW8b, .headerXbox-3G-4PF.header-2BwW8b { padding-bottom: 30px;}.headerPlaying-j0WQBV.header-2BwW8b:after, .headerSpotify-zpWxgT.header-2BwW8b:after, .headerStreaming-2FjmGz.header-2BwW8b:after, .headerXbox-3G-4PF.header-2BwW8b:after { background: url('https://nyri4.github.io/Comfy/assets/wave.png'); background-size: 250px 20px; animation: animate 6s linear infinite !important; opacity: 1 !important;}.header-2BwW8b:after, .headerPlaying-j0WQBV:before, .headerSpotify-zpWxgT:before, .headerStreaming-2FjmGz:before, .headerXbox-3G-4PF:before { position: absolute;content: "";bottom: -1px;left: 0;width: 250px;height: 20px;z-index: -1;animation: animate2 4s linear infinite;animation-delay: 0s;opacity: 0.5;}.headerPlaying-j0WQBV:before { background: url('https://nyri4.github.io/Comfy/assets/wave_playing.png'); background-size: 250px 20px;}.headerSpotify-zpWxgT:before { background: url('https://nyri4.github.io/Comfy/assets/wave_spotify.png'); background-size: 250px 20px;}.headerStreaming-2FjmGz:before { background: url('https://nyri4.github.io/Comfy/assets/wave_streaming.png'); background-size: 250px 20px;}.headerXbox-3G-4PF:before { background: url('https://nyri4.github.io/Comfy/assets/wave_xbox.png'); background-size: 250px 20px;}@keyframes animate { 0% { background-position-x: 0;} 100% { background-position-x: 250px;}}@keyframes animate2 {0% { background-position-x: 250px; } 100% { background-position-x: 0px;}}
 
 /* Server list */
 .guilds-1SWlCJ .scroller-2TZvBN,
@@ -2192,12 +2191,6 @@ html.theme-light #app-mount .reactions-12N0jA .reaction-1hd86g:not(.reactionMe-w
   box-shadow: inset 0 0 0 1px var(--base-border);
   border-radius: var(--border-radius);
 }
-#app-mount .container-1D34oG .image-1GzsFd {
-  margin: 0;
-  width: 175px !important;
-  height: 175px !important;
-  background: url("https://discordstyles.github.io/Slate/assets/illustrations/8.svg") center/contain no-repeat !important;
-}
 #app-mount .container-1D34oG .text-GwUZgS {
   display: none;
 }
@@ -2522,10 +2515,6 @@ html.theme-light #app-mount .container-16j22k .problems-3mgf6w a.statusLink-gFXh
 #app-mount .wrapper-3Q5DdO .verticalSeparator-3huAjp {
   display: none;
 }
-#app-mount .wrapper-3Q5DdO .rightSplit-2US0xy {
-  background: url("https://discordstyles.github.io/Slate/assets/illustrations/2.svg") center/50%;
-  box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, 0.4);
-}
 #app-mount .wrapper-3Q5DdO .authBox-hW6HRx {
   padding: 0;
   max-width: 400px;
@@ -2698,11 +2687,42 @@ html.theme-light #app-mount .container-16j22k .problems-3mgf6w a.statusLink-gFXh
 }
 
 :root {
-	--columns:			2;							/* default:	3					(amount of servercolumns)																		*/	
-
-	--guildsize:			45;							/* default:	50					(serversize in pixel)*/
-
-	--guildgap:			3;							/* default:	3					(top/bottom gap between servers in pixel)														*/
+	--columns:			2;							/* default:	3					(amount of servercolumns)																		*/
+	
+	--guildsize:		45;							/* default:	50					(serversize in pixel)																			*/
+	--guildgap:			2;							/* default:	3					(top/bottom gap between servers in pixel)														*/
 	
 	--aligndms:			1;							/* default:	0					(should DMs be aligned in columns: 0 = no, 1 = yes)												*/
+}
+/* Enlarge status emotes*/
+.customStatusText-3YJeRZ {
+  display: block;
+}
+.customStatusEmoji-7MXCgv {
+  --props: 1.1s ease-in-out;
+  margin: -1px auto 5px;
+  width: 60px !important;
+  height: 60px !important;
+  transition: width var(--props),
+              height var(--props);
+}
+.customStatusEmoji-7MXCgv:hover {
+  margin-bottom: 9px;
+  width: 120px !important;
+  height: 120px !important;
+}
+/* for custom emojis */
+#app-mount .customStatusEmoji-7MXCgv:not([src$='svg']) {
+  width: 60px;
+  height: 60px;
+  margin-right: 0px;
+  margin-bottom: 5px;
+  transition: width 0.75s linear, height 0.75s linear;
+}
+#app-mount .customStatusEmoji-7MXCgv:not([src$='svg']):hover {
+  width: 60%;
+  height: 60%;
+}
+#app-mount .customStatusEmoji-7MXCgv:not([src$='svg']) + .customStatusText-3YJeRZ {
+  display: block;
 }
