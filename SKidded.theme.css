@@ -1,22 +1,24 @@
 /**
  * @name SKidded
  * @author uber#4274
- * @version 1.0m
+ * @version 1.0p
  * @description A skidded theme
  * @authorId 748741808439427104
 */
 
-/* IMPORT SOURCE CODE */
+/* IMPORT RANDOM STUFF */
 @import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css);
 @import url("https://discord-custom-covers.github.io/usrbg/snippets/modals.css");
 @import url("https://discord-custom-covers.github.io/usrbg/snippets/userPopouts.css");
 @import url(https://discordstyles.github.io/discord-dyslexia/src/base.css);
 @import url(https://raw.githack.com/Freeplayg/Discord-TeardropMessages/main/theme.css);
 @import url(https://raw.githack.com/leeprky/MyThemesBasesStuffYeah/lode/round-stuff.css);
-@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/SettingsModal/SettingsModal.css);
 @import url('https://commandcrafterhd.github.io/DiscordDarkNeon/css/hideUsers.css');
 @import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/ServerColumns/ServerColumns.css);
 @import url(https://nfld99.github.io/Better-Discord/Source_Code/Addons/Use_Fonts/DiscordFont.css);
+@import url('https://Goose-Nest.github.io/GT-RevertRebrand/src/main.css');
+
+
 /* not imports */
 .wordmark-2iDDfm:after {
   content: "SKidded";
@@ -47,12 +49,6 @@
     /*set below to 0 to not have a divider*/
     --cu-divider: 1;
 }
-/*settings modal */
-:root {
-	--settingsmodalbackground: 	transparent;			/* default:	transparent		(lowest bg color of changed windows, change it in case another theme turns them transparent)	*/
-	--settingsmodalwidth: 		960px;					/* default:	960px			(width of the settings modal, px/vw)															*/
-	--settingsmodalheight: 		80vh;					/* default:	80vh			(height of the settings modal, px/vh)															*/
-}
 /* ----------------------------------------------------------------------- */
 /* SETTINGS */
 
@@ -77,6 +73,9 @@ display:none;}
   height: 42px;
     transition:height.6s;
 }
+
+.sidebar-CFHs9e .side-8zPYf6 .item-PXvHYJ[aria-controls="Nitro Server Boost-tab" i]::before, .sidebar-CFHs9e .side-8zPYf6 .item-PXvHYJ[aria-controls="GUILD_PREMIUM-tab" i]::before {color: blueviolet;}
+
 /* Permissons (Red) */
 .deny-3nAuT6 {color: #F04747;}
 
@@ -175,22 +174,11 @@ display:none;}
 
 .avatarSpeaking-2c8-9i { display: none; } 
 
-/* gfycat sucks*/
-.embedVideo-3nf0O9[href*="giant.gfycat.com"] {
+/* frick gfycat*/
+.embedVideo-3nf0O9[href*="giant.gfycat.com"],.embedVideo-3nf0O9[href*="thumb.gfycat.com"],.embedVideo-3nf0O9[href*="gfycat.com"],.embedVideo-3nf0O9[href*="thumbs.gfycat.com"] {
   display: none;
 }
-/* gfycat sucks*/
-.embedVideo-3nf0O9[href*="thumb.gfycat.com"] {
-  display: none;
-}
-/* gfycat sucks*/
-.embedVideo-3nf0O9[href*="gfycat.com"] {
-  display: none;
-}
-/* gfycat sucks*/
-.embedVideo-3nf0O9[href*="thumbs.gfycat.com"] {
-  display: none;
-}
+
 .styleFlexible-wGDiIL {
   min-width: 250px;
 }
@@ -2395,3 +2383,6 @@ html.theme-light #app-mount .container-16j22k .problems-3mgf6w a.statusLink-gFXh
 	
 	--aligndms:			1;							/* default:	0					(should DMs be aligned in columns: 0 = no, 1 = yes)												*/
 }
+
+/* New Android reactions port */
+.reaction-1hd86g.reactionMe-wv5HKu { border: 1.4px solid rgba(97,111,162);}
