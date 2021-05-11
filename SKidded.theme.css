@@ -1,23 +1,35 @@
 /**
  * @name SKidded
  * @author uber#4274
- * @version 1.0k
+ * @version 1.0m
  * @description A skidded theme
  * @authorId 748741808439427104
 */
 
 /* IMPORT SOURCE CODE */
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css);
 @import url("https://discord-custom-covers.github.io/usrbg/snippets/modals.css");
 @import url("https://discord-custom-covers.github.io/usrbg/snippets/userPopouts.css");
 @import url(https://discordstyles.github.io/discord-dyslexia/src/base.css);
 @import url(https://raw.githack.com/Freeplayg/Discord-TeardropMessages/main/theme.css);
 @import url(https://raw.githack.com/leeprky/MyThemesBasesStuffYeah/lode/round-stuff.css);
 @import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/SettingsModal/SettingsModal.css);
-@import url('https://commandcrafterhd.github.io/Fallout4TerminalTheme/css/main.css');
 @import url('https://commandcrafterhd.github.io/DiscordDarkNeon/css/hideUsers.css');
 @import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/ServerColumns/ServerColumns.css);
-@import url(https://raw.githack.com/voidfill/compacted-userarea/main/src/base.css);
-
+@import url(https://nfld99.github.io/Better-Discord/Source_Code/Addons/Use_Fonts/DiscordFont.css);
+/* not imports */
+.wordmark-2iDDfm:after {
+  content: "SKidded";
+  font-size: 14px;
+  font-weight: 700;
+  position: linear;
+  top: 5px;
+  padding-left: -3px;
+  font-family: "Discord";
+}
+.wordmark-2iDDfm > svg{
+  width: 0px;
+}
 :root {
     /*default: var(--background-tertiary);*/
     --cu-serverlistbg: var(--background-tertiary);
@@ -35,12 +47,6 @@
     /*set below to 0 to not have a divider*/
     --cu-divider: 1;
 }
-
-:root {
-  --background: #454343 !important;
-  --text-color: #4AEF98 !important;
-  --highlight: var(--text-color) !important;
-}
 /*settings modal */
 :root {
 	--settingsmodalbackground: 	transparent;			/* default:	transparent		(lowest bg color of changed windows, change it in case another theme turns them transparent)	*/
@@ -48,12 +54,6 @@
 	--settingsmodalheight: 		80vh;					/* default:	80vh			(height of the settings modal, px/vh)															*/
 }
 /* ----------------------------------------------------------------------- */
-.cozy-3raOZG .messageContent-2qWWxC:not(.repliedTextContent-1R3vnK), .embedFull-2tM8--, .wrapper-35wsBm,
-.message-2qnXI6 .imageWrapper-2p5ogY,
-.cozy-3raOZG .repliedMessage-VokQwo {
-  box-shadow: 8px  8px  0px  var(--background-tertiary) !important;
-/*Parameters: PosX PosY Blur Color */
-}
 /* SETTINGS */
 
 :root {
@@ -66,7 +66,6 @@
 /* hides blocked messages*/
 .groupStart-23k01U:not(.message-2qnXI6):not([style]) {
 display:none;}
-
 /* Collapsible Member list */
 .membersWrap-2h-GB4:not(:hover) > div .member-3-YXUe{
   height: 0px;
@@ -98,20 +97,13 @@ display:none;}
 .allow-1PzSY3:hover {background: #43B581 !important; color: white;}
 .allow-1PzSY3.selected-2YhbGh {background: #43B581 !important;}
 .allow-1PzSY3.selected-2YhbGh:hover {background: #61D09A !important;}
-
-.circleIcon-LvPL6c:hover{
-   animation: spindefault 1s linear infinite;
-}
-div[data-list-item-id="guildsnav___guild-discover-button"] svg:hover{
-    animation: spindefault 1s linear infinite;
-}
 :root{
   /* For UserStatus */
-  --online:#43b581;
-  --dnd:#f04747;
-  --idle:#faa61a;
-  --offline:rgb(116, 127, 141);
-  --streaming:rgb(89, 54, 149);
+  --online:#05c46e;
+  --dnd:#ff0000;
+  --idle:#fea100;
+  --offline:rgb(83, 86, 91);
+  --streaming:rgb(107, 27, 244);
 }
 #app-mount .wrapper-3t9DeA rect[fill="#ffffff"]:not([mask="url(#svg-mask-status-idle)"]):not([mask="url(#svg-mask-status-dnd)"]):not([mask="url(#svg-mask-status-streaming)"]):not([mask="url(#svg-mask-status-idle-mobile)"]):not([mask="url(#svg-mask-status-dnd-mobile)"]) {
   fill: var(--online) !important;}
