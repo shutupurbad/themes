@@ -1,7 +1,7 @@
 /**
  * @name SKidded
- * @author uber#4274
- * @version 1.1a
+ * @author trunk is not a tree trunk#4274
+ * @version 1.1.0b
  * @description A skidded theme
  * @authorId 748741808439427104
 */
@@ -15,13 +15,20 @@
 @import url(https://raw.githack.com/leeprky/MyThemesBasesStuffYeah/lode/round-stuff.css);
 @import url('https://commandcrafterhd.github.io/DiscordDarkNeon/css/hideUsers.css');
 @import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/ServerColumns/ServerColumns.css);
-@import url(https://nfld99.github.io/Better-Discord/Source_Code/Addons/Use_Fonts/DiscordFont.css);
 @import url('https://Goose-Nest.github.io/GT-RevertRebrand/src/main.css');
 @import url('https://tropix126.github.io/BetterDiscordStuff/materialcons/base.css');
 @import url(https://onscreenproton.github.io/deepbluetheme/Compiled_CSS/deepblueimport.css);
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/BlurpleRecolor/BlurpleRecolor.css);
 
 /* ---------------------------------------------------------------------------- */
 
+/* All colors are in RGB format (red, green, blue) use: https://www.google.com/search?q=colorpicker	*/
+
+:root {
+	--accentcolor:			163,47,194;		/*	blurple		-	default:	114,137,218		*/
+	--accentcolor2:			225,115,180;	/*	boostpink	-	default:	255,115,250		*/
+	--linkcolor:			190,60,220;		/*	link		-	default:	0,176,244		*/
+}
 :root {
   /* Change as you wish */
   --primary: hsl(220, 24%, 20%);
@@ -102,11 +109,11 @@
   content: "SKidded";
   color: rgba(0, 217, 255, 0.7);
   font-size: 14px;
-  text-shadow: 0 0 3px #000;
-  font-family: Discord
+  text-shadow: 0 0 3px rgb(0, 0, 255);
+  font-family: var(--code-font);
 }
 .typeWindows-1za-n7 > .wordmark-2iDDfm:after {
-  content: "v1.0q";
+  content: "v1.1.0b";
   color: rgb(255, 255, 255);
   font-family: var(--code-font);
   font-size: 13px;
@@ -216,7 +223,6 @@ display:none;}
 
 #user-context-invite-to-server{display:none}
 
-
 .layers-3iHuyZ>.layer-3QrUeG:first-child{
   transform: scale(1) !important;
   opacity: 1 !important;
@@ -322,23 +328,6 @@ display:none;}
   margin-top: 5px;
   margin-bottom: 15px;
 }
-
-/* channel title thing and search stuff */
-.title-3qD0b- {
-  background-color: rgba(0, 0, 0, 0.3) !important;
-  border-radius: 20px;
-  margin-left: 15px;
-  margin-top: 10px;
-  margin-right: 5px; /* doesn't work for some reason idfk so I use max-width below*/
-  max-width: 1250px;
-}
-.searchBar-3dMhjb {
-  border-radius: 15px !important;
-}
-.iconWrapper-2OrFZ1, .clickable-3rdHwn {
-  background-color: transparent;
-}
-
 /* memeber list */
 .membersWrap-2h-GB4, .hiddenMembers-2dcs_q {
   background-color: rgba(0, 0, 0, 0.3) !important;
@@ -416,8 +405,6 @@ display:none;}
   filter: none;
   clip-path: none;
 }
-
-#user-context-invite-to-server{display:none}
 
 :root {
   --emojis-size: 180px; /* Only Change this */
@@ -516,7 +503,6 @@ html.theme-dark .force-theme.theme-light {
   height: 24px;
   top: 0;
   left: 0;
-  color: var(--text-normal);
   border-bottom: 1px solid var(--base-border);
   font-size: 1em;
   font-weight: var(--font-weight-normal);
@@ -581,7 +567,6 @@ html.theme-dark .force-theme.theme-light {
   height: 24px;
   top: 0;
   left: 0;
-  color: var(--text-normal);
   border-bottom: 1px solid var(--base-border);
   font-size: 1em;
   font-weight: var(--font-weight-normal);
@@ -591,7 +576,7 @@ html.theme-dark .force-theme.theme-light {
   position: absolute;
   background-color: var(--background-light);
   box-sizing: border-box;
-  font-family: var(--font-family-sans-serif);
+  font-family: sans-serif;
   line-height: 1;
   white-space: nowrap;
   overflow: hidden;
@@ -604,8 +589,7 @@ html.theme-dark .force-theme.theme-light {
   top: 0;
   left: 0;
   padding: 0 var(--spacing-third);
-  --webkit-mask: url('data:image/svg+xml; utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill-rule="evenodd" d="M3 3a2 2 0 012-2h9.982a2 2 0 011.414.586l4.018 4.018A2 2 0 0121 7.018V21a2 2 0 01-2 2H4.75a.75.75 0 010-1.5H19a.5.5 0 00.5-.5V8.5h-4a2 2 0 01-2-2v-4H5a.5.5 0 00-.5.5v6.25a.75.75 0 01-1.5 0V3zm12-.5v4a.5.5 0 00.5.5h4a.5.5 0 00-.146-.336l-4.018-4.018A.5.5 0 0015 2.5z"/><path d="M4.53 12.24a.75.75 0 01-.039 1.06l-2.639 2.45 2.64 2.45a.75.75 0 11-1.022 1.1l-3.23-3a.75.75 0 010-1.1l3.23-3a.75.75 0 011.06.04zm3.979 1.06a.75.75 0 111.02-1.1l3.231 3a.75.75 0 010 1.1l-3.23 3a.75.75 0 11-1.021-1.1l2.639-2.45-2.64-2.45z"/></svg>') center/12px no-repeat;
-  background: var(--text-normal);
+  font-family: sans-serif;
 }
 #app-mount pre code[class~=hljs]:before {
   content: "Plain Text";
@@ -862,50 +846,7 @@ html.theme-dark .force-theme.theme-light {
 #app-mount pre code[class~=asm i]:before, #app-mount pre code[class~=assembly i]:before {
   content: "Assembly";
 }
-#app-mount pre code .hljs-built_in,
-#app-mount pre code .hljs-doctag,
-#app-mount pre code .hljs-literal,
-#app-mount pre code .hljs-meta .hljs-meta-string,
-#app-mount pre code .hljs-number,
-#app-mount pre code .hljs-regexp,
-#app-mount pre code .hljs-selector-class {
-  color: var(--syntax-purple);
-}
-#app-mount pre code .hljs-attribute,
-#app-mount pre code .hljs-name,
-#app-mount pre code .hljs-section,
-#app-mount pre code .hljs-selector-class,
-#app-mount pre code .hljs-selector-id,
-#app-mount pre code .hljs-string,
-#app-mount pre code .hljs-title {
-  color: var(--syntax-blue);
-}
-#app-mount pre code .hljs-attr,
-#app-mount pre code .hljs-attribute,
-#app-mount pre code .hljs-bullet,
-#app-mount pre code .hljs-class,
-#app-mount pre code .hljs-link,
-#app-mount pre code .hljs-meta,
-#app-mount pre code .hljs-meta .hljs-keyword,
-#app-mount pre code .hljs-selector-attr,
-#app-mount pre code .hljs-selector-pseudo,
-#app-mount pre code .hljs-subst,
-#app-mount pre code .hljs-symbol,
-#app-mount pre code .hljs-template-variable,
-#app-mount pre code .hljs-title,
-#app-mount pre code .hljs-type,
-#app-mount pre code .hljs-variable {
-  color: var(--syntax-orange);
-}
-#app-mount pre code .hljs-addition,
-#app-mount pre code .hljs-keyword,
-#app-mount pre code .hljs-selector-tag {
-  color: var(--syntax-green);
-}
-#app-mount pre code .hljs-comment,
-#app-mount pre code .hljs-quote {
-  color: var(--syntax-grey);
-}
+
 
 :root {
 	--columns:			2;							/* default:	3					(amount of servercolumns)																		*/
@@ -943,8 +884,19 @@ html.theme-dark .force-theme.theme-light {
 }
 .reaction-1hd86g.reactionMe-wv5HKu {
     background-color: rgba(0, 0, 0) !important;
-    border-color: rgba(0, 255, 0, 1) !important;
+    border-color: rgba(0, 0, 255) !important;
 }
 .reaction-1hd86g.reactionMe-wv5HKu .reactionCount-2mvXRV {
-    color: rgba(0, 255, 0);
+    color: rgb(0, 0, 255);
+}
+/* channel title thing and search stuff */
+.searchBar-3dMhjb {
+  border-radius: 15px !important;
+}
+.iconWrapper-2OrFZ1, .clickable-3rdHwn {
+  background-color: transparent;
+}
+
+.markup-2BOw-j a {
+  color: #5539cc;
 }
