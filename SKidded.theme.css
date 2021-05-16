@@ -25,15 +25,15 @@
 /* All colors are in RGB format (red, green, blue) use: https://www.google.com/search?q=colorpicker	*/
 
 :root {
-	--accentcolor:			163,47,194;		/*	blurple		-	default:	114,137,218		*/
+	--accentcolor:			0,60,255;		/*	blurple		-	default:	114,137,218		*/
 	--accentcolor2:			225,115,180;	/*	boostpink	-	default:	255,115,250		*/
 	--linkcolor:			190,60,220;		/*	link		-	default:	0,176,244		*/
 }
 :root {
   /* Change as you wish */
-  --primary: hsl(220, 24%, 20%);
+  --primary: hsla(220, 95%, 17%, 0.377);
   /* default: hsl(220, 24%, 20%) */
-  --secondary: hsl(220, 24%, 12%);
+  --secondary: hsl(241, 89%, 15%);
   /* default: hsl(220, 24%, 12%) */
   --secondary-alpha: rgba(39, 47, 63, 0.9);
   /* default: rgba(39, 47, 63, 0.9) */
@@ -295,7 +295,6 @@ display:none;}
 .container-2Pjhx- .activityText-yGKsKm {
     color: blue;
 }
-.botText-1526X_::after { content: 'TO'; }
 
 /* Server list */
 .guilds-1SWlCJ .scroller-2TZvBN,
