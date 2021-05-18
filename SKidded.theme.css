@@ -4,6 +4,7 @@
  * @version 1.1.0b
  * @description A skidded theme
  * @authorId 748741808439427104
+ * source https://github.com/shutupurbad/my-betterdiscord-stuff/blob/main/SKidded.theme.css
 */
 
 /* IMPORT RANDOM STUFF */
@@ -27,7 +28,6 @@
 :root {
 	--accentcolor:			0,60,255;		/*	blurple		-	default:	114,137,218		*/
 	--accentcolor2:			225,115,180;	/*	boostpink	-	default:	255,115,250		*/
-	--linkcolor:			190,60,220;		/*	link		-	default:	0,176,244		*/
 }
 :root {
   /* Change as you wish */
@@ -468,7 +468,7 @@ display:none;}
 --switch-color: rgb(15,68,117);
 background-color: var(--switch-color) !important;
 fill: var(--switch-color) !important;}
-
+/* codeblock colors */
 .theme-dark,
 html.theme-dark #app-mount .theme-light .root-1gCeng,
 html.theme-dark .force-theme.theme-light {
@@ -496,6 +496,9 @@ html.theme-dark .force-theme.theme-light {
   --syntax-orange:#ffab70;
   --syntax-green:#56b6c2;
 }
+
+/* codeblocks */
+
 #app-mount pre code:before {
   content: "Unknown Language";
   width: 100%;
@@ -555,7 +558,8 @@ html.theme-dark .force-theme.theme-light {
   padding: 25px 0.25em 0.15em 34px !important;
   background: transparent !important;
   border: 1px solid var(--base-border);
-  font-size: var(--font-size-sm);
+  font-size: 11px;
+  font-family: sans-serif;
   line-height: var(--line-height);
   border-radius: var(--border-radius);
   color: var(--syntax-grey-alt);
@@ -590,6 +594,7 @@ html.theme-dark .force-theme.theme-light {
   padding: 0 var(--spacing-third);
   font-family: sans-serif;
 }
+
 #app-mount pre code[class~=hljs]:before {
   content: "Plain Text";
 }
@@ -899,3 +904,20 @@ html.theme-dark .force-theme.theme-light {
 .markup-2BOw-j a {
   color: #5539cc;
 }
+/* used to be uncolored */
+#app-mount .children-19S4PO {
+  background-color: transparent;
+}
+
+.members-1998pB, .thin-1ybCId, .scrollerBase-289Jih, .fade-2kXiP2 {
+  background-color: transparent;
+}
+
+#app-mount .member-3-YXUe, .container-2Pjhx-, .clickable-1JJAn8 {
+  background-color: transparent;
+}
+
+#app-mount .content-3YMskv {
+  background-color: transparent;
+}
+/* ------------------------------------------------------------ */
