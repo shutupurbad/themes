@@ -1,7 +1,7 @@
 /**
  * @name SKidded
  * @author trunk is not a tree trunk#4274
- * @version 1.1.0c
+ * @version 1.1.0d
  * @description A skidded theme
  * @authorId 748741808439427104
  * source https://github.com/shutupurbad/my-betterdiscord-stuff/blob/main/SKidded.theme.css
@@ -113,7 +113,7 @@
   font-family: var(--code-font);
 }
 .typeWindows-1za-n7 > .wordmark-2iDDfm:after {
-  content: "v1.1.0c";
+  content: "v1.1.0d";
   color: rgb(255, 255, 255);
   font-family: var(--code-font);
   font-size: 13px;
@@ -905,7 +905,7 @@ html.theme-dark .force-theme.theme-light {
   background-color: transparent;
 }
 
-.members-1998pB, .thin-1ybCId, .scrollerBase-289Jih, .fade-2kXiP2 {
+.thin-1ybCId, .scrollerBase-289Jih, .fade-2kXiP2 {
   background-color: transparent;
 }
 
@@ -981,4 +981,40 @@ html.theme-dark .force-theme.theme-light {
 [href*="github.com"]{
     color:#00f0a8 !important;
     font-weight: 700;
+}
+
+/* text size */
+#app-mount .markup-2BOw-j, .messageContent-2qWWxC {
+  font-size: 16.3px !important;
+}
+
+/* popout profile modern*/
+
+.protip-YaFfgO {
+    display: none;
+}
+.headerText-2sdzFM {
+    display: block;
+    position: relative;
+    left: 50px;
+    bottom: 65px;
+    max-height: 0px;
+    max-width: 125px;
+}
+.avatarWrapper-3H_478 {
+    right: 65px;
+    padding: 2px;
+}
+.headerTagWithNickname-3IthZD {
+    max-width: 115px;
+}
+.px-10SIf7.botTag-2WPJ74{
+    background-color: rgba(255, 255, 255, 0.438);
+}
+.customStatus-1bh2V9{
+    margin-top: 0px !important;
+}
+.avatarHint-1qgaV3 {
+    right: 65px;
+    padding: 2px;
 }
