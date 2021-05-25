@@ -29,10 +29,10 @@
   --mention-hue: 187;
   --columns:			2;							/* default:	3					(amount of servercolumns)																		*/
 	
-	--guildsize:		50;							/* default:	50					(serversize in pixel)																			*/
-	--guildgap:			5;							/* default:	3					(top/bottom gap between servers in pixel)														*/
+  --guildsize:		50;							/* default:	50					(serversize in pixel)																			*/
+  --guildgap:			5;							/* default:	3					(top/bottom gap between servers in pixel)														*/
 	
-	--aligndms:			1;							/* default:	0					(should DMs be aligned in columns: 0 = no, 1 = yes)												*/
+  --aligndms:			1;							/* default:	0					(should DMs be aligned in columns: 0 = no, 1 = yes)												*/
   --emojis-size: 180px; /* Only Change this */
   --word-spacing: 3px;       /* Word spacing */
   --letter-spacing: 0.25px;  /* Letter Spacing */
@@ -1033,7 +1033,7 @@ html.theme-dark .force-theme.theme-light {
     right: 65px;
     padding: 2px;
 }
-/**disable orange DM**/
+/**disable rainbow DM**/
 .wrapper-3NnKdC .scroller-1Bvpku div .listItem-GuPuDH .pill-1Z5PKm .item-2hkk8m {
 	opacity: 0 !important;
 }
