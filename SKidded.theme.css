@@ -335,7 +335,7 @@ display:none;}
   filter:blur(2px) contrast(75%) grayscale(15%);
     transition:200ms ease;
 }
-
+/* remove retarded green circle around avatar */
 .avatarSpeaking-2c8-9i { display: none; } 
 
 /* frick gfycat*/
@@ -1063,4 +1063,10 @@ html.theme-dark .force-theme.theme-light {
 /**disable rainbow DM**/
 .wrapper-3NnKdC .scroller-1Bvpku div .listItem-GuPuDH .pill-1Z5PKm .item-2hkk8m {
 	opacity: 0 !important;
+}
+/* categories */
+.mainContent-2h-GEV::before {
+    content: "📂";    
+    padding-left: 50px;
+    text-align: right;
 }
