@@ -28,11 +28,9 @@
 :root {
   --mention-hue: 187;
   --columns:			2;							/* default:	3					(amount of servercolumns)																		*/
-	
-	--guildsize:		50;							/* default:	50					(serversize in pixel)																			*/
-	--guildgap:			5;							/* default:	3					(top/bottom gap between servers in pixel)														*/
-	
-	--aligndms:			1;							/* default:	0					(should DMs be aligned in columns: 0 = no, 1 = yes)												*/
+  --guildsize:		50;							/* default:	50					(serversize in pixel)																			*/
+  --guildgap:			5;							/* default:	3					(top/bottom gap between servers in pixel)														*/
+  --aligndms:			1;							/* default:	0					(should DMs be aligned in columns: 0 = no, 1 = yes)												*/
   --emojis-size: 180px; /* Only Change this */
   --word-spacing: 3px;       /* Word spacing */
   --letter-spacing: 0.25px;  /* Letter Spacing */
