@@ -26,6 +26,9 @@
 /* All colors are in RGB format (red, green, blue) use: https://www.google.com/search?q=colorpicker	*/
 
 :root {
+  --Thickness:5px;
+  --Speed:6s;
+  /* epic rainbow border */
   --mention-hue: 187;
   --columns:			2;							/* default:	3					(amount of servercolumns)																		*/
 	
@@ -127,7 +130,31 @@
 }
 
 /* ----------------------------------------------------------------------- */
-
+/* rainbow epic thing */
+.appMount-3lHmkl{
+    margin:var(--Thickness);
+    width:calc(100% - calc(var(--Thickness) * 2))!important;
+    height:calc(100% - calc(var(--Thickness) * 2))!important;
+}
+.platform-osx .appMount-3lHmkl{
+    border-radius:6px;
+}
+body{
+    background-image: linear-gradient(to left, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+    animation: gradient-border var(--Speed) lineaar infinite;
+    background-size: 400% 100%;
+    color: transparent !important;
+  }
+@keyframes gradient-border {
+      0%, 200% {
+        background-position: 0 0;
+    }
+  
+      99.999999999999999% {
+        background-position: 130% 0;
+    }
+}
+/* orange collumn */
 .item-2hkk8m {
     display: none;
 }
