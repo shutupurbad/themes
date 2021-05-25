@@ -26,10 +26,40 @@
 /* All colors are in RGB format (red, green, blue) use: https://www.google.com/search?q=colorpicker	*/
 
 :root {
-	--accentcolor:			0,60,255;		/*	blurple		-	default:	114,137,218		*/
+  --mention-hue: 187;
+  --columns:			2;							/* default:	3					(amount of servercolumns)																		*/
+	
+	--guildsize:		50;							/* default:	50					(serversize in pixel)																			*/
+	--guildgap:			5;							/* default:	3					(top/bottom gap between servers in pixel)														*/
+	
+	--aligndms:			1;							/* default:	0					(should DMs be aligned in columns: 0 = no, 1 = yes)												*/
+  --emojis-size: 180px; /* Only Change this */
+  --word-spacing: 3px;       /* Word spacing */
+  --letter-spacing: 0.25px;  /* Letter Spacing */
+  --message-line-spacing: 2; /* Line spacing on messages */
+  /*default: var(--background-tertiary);*/
+  --cu-serverlistbg: var(--background-tertiary);
+
+  /*default: var(--background-tertiary);*/
+  --cu-topbarbg: var(--background-tertiary);
+
+  /*default: var(--background-modifier-accent);*/
+  --cu-dividercolor: var(--background-modifier-accent);
+
+  /*set below to a value between 0 and 1 to have the statuspicker width be respective to the channelwidth*/
+  /*for example 0.5 would be half of the channels*/
+  --cu-statuspickerwidth: 1;
+
+  /*set below to 0 to not have a divider*/
+  --cu-divider: 1;
+  /* For UserStatus */
+  --online:#05c46e;
+  --dnd:#ff0000;
+  --idle:#fea100;
+  --offline:rgb(83, 86, 91);
+  --streaming:rgb(107, 27, 244);
+  --accentcolor:			0,60,255;		/*	blurple		-	default:	114,137,218		*/
 	--accentcolor2:			225,115,180;	/*	boostpink	-	default:	255,115,250		*/
-}
-:root {
   /* Change as you wish */
   --primary: hsla(220, 95%, 17%, 0.377);
   /* default: hsl(220, 24%, 20%) */
@@ -61,14 +91,7 @@
   /* default: rgba(64, 106, 191, 0.4) */
   --mention-color-alt2: rgba(64, 106, 191, 0.1);
   /* default: rgba(64, 106, 191, 0.1) */
-  --ping-width: 30px;
-  /* default: 30px */
-  /* powercord */
-  --spotify-color: var(--accent) !important;
-  --toast-header: var(--secondary) !important;
-  --toast-background: var(--primary) !important;
-  --toast-border: var(--tertiary) !important;
-  --toast-contents: var(--secondary) !important;
+  --ping-width: 30px;  /*default: 30px */
   /* discord vars */
   --background-primary: var(--primary);
   --background-secondary: var(--secondary);
@@ -97,6 +120,46 @@
   --deprecated-text-input-border: var(--tertiary);
   --deprecated-quickswitcher-input-background: var(--primary);
   --brand-experiment: var(--accent) !important;
+   /*shitty column*/
+
+  --unread-server-animation: rainbow;
+  --saucisse: rgb(255, 204, 0);
+}
+
+/* ----------------------------------------------------------------------- */
+
+.item-2hkk8m {
+    display: none;
+}
+.item-2hkk8m:not([style *= "height: 8px"]) {
+	border-color: transparent;
+    background-color: transparent;
+} 
+.wrapper-1Rf91z .scroller-2TZvBN > div.listItem-2P_4kh:nth-child(1) .item-2hkk8m {
+    opacity: 0 !important;
+}
+.item-2hkk8m {
+    animation: var(--unread-server-animation) 3s linear infinite;
+    border: 3px solid var(--saucisse);
+    background: transparent;
+    border-radius: 100%;
+    display: block;
+    margin-top: 0%;
+	margin-bottom: 0;
+	margin-left: 10%;
+    position: relative;
+	top: 0;
+    right: 0px !important;
+    width: 48px;
+    height: 48px !important;
+    /* remove the left to right display transformation */
+    transform: none !important;
+}
+
+/**marge badge notif **/
+.wrapper-sa6paO {
+    height: 80px;
+    width: 80px;
 }
 
 .typeWindows-1za-n7 > .wordmark-2iDDfm:before, .typeWindows-1za-n7 > .wordmark-2iDDfm:after {
@@ -140,33 +203,7 @@
 .wordmark-2iDDfm > svg{
   width: 0px;
 }
-:root {
-    /*default: var(--background-tertiary);*/
-    --cu-serverlistbg: var(--background-tertiary);
 
-    /*default: var(--background-tertiary);*/
-    --cu-topbarbg: var(--background-tertiary);
-
-    /*default: var(--background-modifier-accent);*/
-    --cu-dividercolor: var(--background-modifier-accent);
-
-    /*set below to a value between 0 and 1 to have the statuspicker width be respective to the channelwidth*/
-    /*for example 0.5 would be half of the channels*/
-    --cu-statuspickerwidth: 1;
-
-    /*set below to 0 to not have a divider*/
-    --cu-divider: 1;
-}
-/* ----------------------------------------------------------------------- */
-/* SETTINGS */
-
-:root {
-    --word-spacing: 3px;       /* Word spacing */
-    --letter-spacing: 0.25px;  /* Letter Spacing */
-    --message-line-spacing: 2; /* Line spacing on messages */
-}
-
-/* ----------------------------------------------------------------------- */
 /* hides blocked messages*/
 .groupStart-23k01U:not(.message-2qnXI6):not([style]) {
 display:none;}
@@ -204,14 +241,7 @@ display:none;}
 .allow-1PzSY3:hover {background: #43B581 !important; color: white;}
 .allow-1PzSY3.selected-2YhbGh {background: #43B581 !important;}
 .allow-1PzSY3.selected-2YhbGh:hover {background: #61D09A !important;}
-:root{
-  /* For UserStatus */
-  --online:#05c46e;
-  --dnd:#ff0000;
-  --idle:#fea100;
-  --offline:rgb(83, 86, 91);
-  --streaming:rgb(107, 27, 244);
-}
+
 #app-mount .wrapper-3t9DeA rect[fill="#ffffff"]:not([mask="url(#svg-mask-status-idle)"]):not([mask="url(#svg-mask-status-dnd)"]):not([mask="url(#svg-mask-status-streaming)"]):not([mask="url(#svg-mask-status-idle-mobile)"]):not([mask="url(#svg-mask-status-dnd-mobile)"]) {
   fill: var(--online) !important;}
 #app-mount .wrapper-3t9DeA rect[fill="#ffffff"]:not([mask="url(#svg-mask-status-online)"]):not([mask="url(#svg-mask-status-idle)"]):not([mask="url(#svg-mask-status-streaming)"]):not([mask="url(#svg-mask-status-online-mobile)"]):not([mask="url(#svg-mask-status-idle-mobile)"]) {
@@ -405,9 +435,6 @@ display:none;}
   clip-path: none;
 }
 
-:root {
-  --emojis-size: 180px; /* Only Change this */
-}
 .emojiSection-3Fb9ix .flex-1xMQg5 {
     display: flex;
     flex-direction: column;
@@ -851,16 +878,6 @@ html.theme-dark .force-theme.theme-light {
   content: "Assembly";
 }
 
-
-:root {
-	--columns:			2;							/* default:	3					(amount of servercolumns)																		*/
-	
-	--guildsize:		45;							/* default:	50					(serversize in pixel)																			*/
-	--guildgap:			5;							/* default:	3					(top/bottom gap between servers in pixel)														*/
-	
-	--aligndms:			1;							/* default:	0					(should DMs be aligned in columns: 0 = no, 1 = yes)												*/
-}
-
 /* New Android reactions port */
 .reaction-1hd86g.reactionMe-wv5HKu { border: 1.4px solid rgb(0, 55, 255);}
 
@@ -904,7 +921,9 @@ html.theme-dark .force-theme.theme-light {
 #app-mount .children-19S4PO {
   background-color: transparent;
 }
-
+.childWrapper-anI2G9 {
+    background-color: #080394;
+}
 .thin-1ybCId, .scrollerBase-289Jih, .fade-2kXiP2 {
   background-color: transparent;
 }
@@ -920,10 +939,6 @@ html.theme-dark .force-theme.theme-light {
   background-color: hsla(219, 94%, 14%, 0.925)
 }
 /* ------------------------------------------------------------ */
-/* mention hue */
-:root {
-    --mention-hue: 187;
-}
 
 .mentioned-xhSam7 .repliedMessage-VokQwo:before{
     border-color:hsla(var(--mention-hue), 73%, 46%);
