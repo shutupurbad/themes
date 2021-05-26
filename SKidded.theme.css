@@ -1,7 +1,7 @@
 /**
  * @name SKidded
  * @author trunk is not a tree trunk#4274
- * @version 1.1.0d
+ * @version 1.1.0e
  * @description A skidded theme
  * @authorId 748741808439427104
  * source https://github.com/shutupurbad/my-betterdiscord-stuff/blob/main/SKidded.theme.css
@@ -203,7 +203,7 @@ body{
   font-family: var(--code-font);
 }
 .typeWindows-1za-n7 > .wordmark-2iDDfm:after {
-  content: "v1.1.0d";
+  content: "v1.1.0e";
   color: rgb(255, 255, 255);
   font-family: var(--code-font);
   font-size: 13px;
@@ -1029,37 +1029,6 @@ html.theme-dark .force-theme.theme-light {
 #app-mount .markup-2BOw-j, .messageContent-2qWWxC {
   font-size: 16.3px !important;
 }
-
-/* popout profile modern*/
-
-.protip-YaFfgO {
-    display: none;
-}
-.headerText-2sdzFM {
-    display: block;
-    position: relative;
-    left: 50px;
-    bottom: 65px;
-    max-height: 0px;
-    max-width: 125px;
-}
-.avatarWrapper-3H_478 {
-    right: 65px;
-    padding: 2px;
-}
-.headerTagWithNickname-3IthZD {
-    max-width: 115px;
-}
-.px-10SIf7.botTag-2WPJ74{
-    background-color: rgba(255, 255, 255, 0.438);
-}
-.customStatus-1bh2V9{
-    margin-top: 0px !important;
-}
-.avatarHint-1qgaV3 {
-    right: 65px;
-    padding: 2px;
-}
 /**disable rainbow DM**/
 .wrapper-3NnKdC .scroller-1Bvpku div .listItem-GuPuDH .pill-1Z5PKm .item-2hkk8m {
 	opacity: 0 !important;
@@ -1069,4 +1038,67 @@ html.theme-dark .force-theme.theme-light {
     content: "📂";    
     padding-left: 50px;
     text-align: right;
+}
+
+/*user popout update*/
+
+.profileBanner-33-uE1 {
+  background: none;
+}
+
+.avatarWrapperNormal-2tu8Ts {
+  left: 35%;
+}
+
+.headerTop-2y3V6H > .profileBadges-1dm1_q {
+  display: none;
+}
+
+.headerText-2WJ44e {
+  text-align: center;
+}
+
+.username-2b1r56.headerTagUsernameNoNickname-1SSLBc.headerTagUsernameBase-12nwcw {
+  overflow: hidden;
+}
+
+#app-mount .profileBanner-33-uE1, .banner-2QYc2d {
+  display: none;
+}
+
+#app-mount .avatar-22FtUu {
+  margin-top: -20px;
+  margin-left: -100px;
+  padding: 1px;
+}
+
+#app-mount .headerTagNoNickname-3ak9o8 .headerTag-nSOkYt, .size14-3iUx6q, .size20-2QkeeC {
+  font-size: 16px;
+  margin-left: 100px;
+  margin-top: -30px;
+}
+
+#app-mount .nickname-322DbL {
+  position: absolute;
+}
+
+.date-YN6TCS {
+  user-select: text;
+}
+
+.avatarHint-1E3LMl {
+  margin-top: -20px;
+  margin-left: -100px;
+  padding: 1px;
+}
+
+/*view profile modal rounding*/
+[class*="avatar"] {
+  border-radius: 6px;
+}
+[class*="avatar"] .avatarHint-1E3LMl, [class*="avatar2"] .avatarHint-1qgaV3, [class*="avatar"] .avatarHint-1E3LMl {
+  border-radius: 6px;
+}
+[class*="avatar"] .avatarHint-1E3LMl foreignObject, [class*="avatar"] .avatarHint-1qgaV3 foreignObject, [class*="avatar"] .avatar-VxgULZ foreignObject {
+  mask: unset !important;
 }
