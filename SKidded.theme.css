@@ -1097,3 +1097,24 @@ html.theme-dark .force-theme.theme-light {
     top: 0;
     left: 0;
 }
+
+/* bot tag */
+.px-10SIf7.botTag-2WPJ74 {
+    background: rgb(50,130,250)
+}
+.px-10SIf7 .botText-1526X_ {
+    font: 16px cursive;
+}
+.px-10SIf7 .botText-1526X_ {
+    text-indent: -999px;
+}
+.px-10SIf7 .botText-1526X_:after {
+    text-indent: 0px;
+    float: left;
+    content: 'ඞ';
+}
+/* gradient userpopout */
+#app-mount .headerTop-2y3V6H {
+    background: rgb(95,87,222);
+    background: linear-gradient(90deg, rgba(95,87,222,1) 0%, rgba(113,98,240,1) 3%, rgba(132,110,230,1) 17%, rgba(84,67,135,1) 25%, rgba(109,76,190,1) 37%, rgba(139,87,250,0.9363095580028886) 52%, rgba(105,80,245,1) 55%, rgba(53,78,255,1) 61%, rgba(0,212,255,1) 100%);
+}
