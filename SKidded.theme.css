@@ -9,8 +9,6 @@
 
 /* IMPORT RANDOM STUFF */
 @import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css");
-@import url("https://discord-custom-covers.github.io/usrbg/snippets/modals.css");
-@import url("https://discord-custom-covers.github.io/usrbg/snippets/userPopouts.css");
 @import url("https://discordstyles.github.io/discord-dyslexia/src/base.css");
 @import url("https://raw.githack.com/Freeplayg/Discord-TeardropMessages/main/theme.css");
 @import url("https://raw.githack.com/leeprky/MyThemesBasesStuffYeah/lode/round-stuff.css");
@@ -18,7 +16,7 @@
 @import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/ServerColumns/ServerColumns.css");
 @import url("https://Goose-Nest.github.io/GT-RevertRebrand/src/main.css");
 @import url("https://tropix126.github.io/BetterDiscordStuff/materialcons/base.css");
-@import url("https://onscreenproton.github.io/deepbluetheme/Compiled_CSS/deepblueimport.css");
+@import url("https://raw.githack.com/shutupurbad/my-betterdiscord-stuff/main/deepblueimport.css");
 @import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/BlurpleRecolor/BlurpleRecolor.css");
 
 /* ---------------------------------------------------------------------------- */
@@ -251,21 +249,8 @@ display:none;}
   fill: var(--idle) !important;}
 #app-mount .wrapper-3t9DeA rect[fill="#ffffff"]:not([mask="url(#svg-mask-status-dnd)"]):not([mask="url(#svg-mask-status-online)"]):not([mask="url(#svg-mask-status-idle)"]):not([mask="url(#svg-mask-status-online-mobile)"]):not([mask="url(#svg-mask-status-dnd-mobile)"]):not([mask="url(#svg-mask-status-idle-mobile)"]) {
   fill: var(--streaming) !important;}
-
+/* hide invite to server context */
 #user-context-invite-to-server{display:none}
-/* blur settings modal thing why not */
-.layers-3iHuyZ>.layer-3QrUeG:first-child{
-  transform: scale(1) !important;
-  opacity: 1 !important;
-}
-.layers-3iHuyZ>.layer-3QrUeG:nth-child(2),.perksModal-fSYqOq{
-  background-color: rgba(0, 0, 0, 0.5)!important;
-  backdrop-filter: blur(9px);
-}
-.contentRegionScroller-26nc1e,.contentRegion-3nDuYy,.standardSidebarView-3F1I7i,
-.sidebarRegionScroller-3MXcoP{
-  background: transparent;
-}
 
 /**Popout Window Buttons v2 */
 .titleBar-AC4pGV>*:nth-child(2):hover {
@@ -359,7 +344,7 @@ display:none;}
   margin-top: 5px;
   margin-bottom: 15px;
 }
-/* memeber list */
+/* member list */
 .membersWrap-2h-GB4, .hiddenMembers-2dcs_q {
   background-color: rgba(0, 0, 0, 0.3) !important;
   border-radius: 20px;
@@ -368,7 +353,7 @@ display:none;}
   margin-right: 10px;
 }
 
-/* guilds (horizantal)*/
+/* guilds (horizontal)*/
 .wrapper-3NnKdC, #app-mount .guilds-1SWlCJ {
   background-color: rgba(0, 0, 0, 0.3) !important;
   border-radius: 20px;
@@ -923,9 +908,7 @@ html.theme-dark .force-theme.theme-light {
 #app-mount .children-19S4PO {
   background-color: transparent;
 }
-.childWrapper-anI2G9 {
-    background-color: #080394;
-}
+
 .thin-1ybCId, .scrollerBase-289Jih, .fade-2kXiP2 {
   background-color: transparent;
 }
@@ -1081,40 +1064,81 @@ html.theme-dark .force-theme.theme-light {
 
 /* background image why not */
 :root::after {
-    background-image: url(http://thumbs.gfycat.com/DecisiveSorrowfulGuineapig-size_restricted.gif);
-    background-size: auto; /* Use cover for small images and contain for large images {default: auto} */
-    mix-blend-mode: screen; /* Use multiply for the opposite effect {default: screen} */
-    filter: invert(0); /* Use to invert dark images for light theme */
-    background-repeat: no-repeat;
-    background-position: center;
-    pointer-events: none;
-    position: absolute;
-    z-index: 10000003;
-    width: 100vw;
-    height: 100vh;
-    content: "";
-    opacity: 1;
-    top: 0;
-    left: 0;
+  background-image: url(http://thumbs.gfycat.com/DecisiveSorrowfulGuineapig-size_restricted.gif);
+  background-size: auto; /* Use cover for small images and contain for large images {default: auto} */
+  mix-blend-mode: screen; /* Use multiply for the opposite effect {default: screen} */
+  filter: invert(0); /* Use to invert dark images for light theme */
+  background-repeat: no-repeat;
+  background-position: center;
+  pointer-events: none;
+  position: absolute;
+  z-index: 10000003;
+  width: 100vw;
+  height: 100vh;
+  content: "";
+  opacity: 1;
+  top: 0;
+  left: 0;
 }
 
 /* bot tag */
 .px-10SIf7.botTag-2WPJ74 {
-    background: rgb(50,130,250)
+  background: rgb(50,130,250)
 }
 .px-10SIf7 .botText-1526X_ {
-    font: 16px cursive;
+  font: 16px cursive;
 }
 .px-10SIf7 .botText-1526X_ {
-    text-indent: -999px;
+  text-indent: -999px;
 }
 .px-10SIf7 .botText-1526X_:after {
-    text-indent: 0px;
-    float: left;
-    content: 'ඞ';
+  text-indent: 0px;
+  float: left;
+  content: 'ඞ';
 }
 /* gradient userpopout */
 #app-mount .headerTop-2y3V6H {
-    background: rgb(95,87,222);
-    background: linear-gradient(90deg, rgba(95,87,222,1) 0%, rgba(113,98,240,1) 3%, rgba(132,110,230,1) 17%, rgba(84,67,135,1) 25%, rgba(109,76,190,1) 37%, rgba(139,87,250,0.9363095580028886) 52%, rgba(105,80,245,1) 55%, rgba(53,78,255,1) 61%, rgba(0,212,255,1) 100%);
+  background: rgb(95,87,222);
+  background: linear-gradient(90deg, rgba(95,87,222,1) 0%, rgba(113,98,240,1) 3%, rgba(132,110,230,1) 17%, rgba(84,67,135,1) 25%, rgba(109,76,190,1) 37%, rgba(139,87,250,0.9363095580028886) 52%, rgba(105,80,245,1) 55%, rgba(53,78,255,1) 61%, rgba(0,212,255,1) 100%);
+}
+
+/* gradient user contenxt */
+#user-context {
+  background: rgb(95,87,222);
+  background: linear-gradient(90deg, rgba(95,87,222,1) 0%, rgba(113,98,240,1) 3%, rgba(132,110,230,1) 17%, rgba(84,67,135,1) 25%, rgba(109,76,190,1) 37%, rgba(139,87,250,0.9363095580028886) 52%, rgba(105,80,245,1) 55%, rgba(53,78,255,1) 61%, rgba(0,212,255,1) 100%);
+}
+/* nyan cat logo epic thing*/
+.childWrapper-anI2G9 {
+  content: url("https://static.wixstatic.com/media/4cbe8d_f1ed2800a49649848102c68fc5a66e53~mv2.gif");
+}
+
+/* animated user modal gradience epic thing */
+.header-QKLPzZ {
+  background: linear-gradient(180deg, #000cff, #000000);
+  background-size: 400% 400%;
+  -webkit-animation: rotate 30s ease infinite;
+  -moz-animation: rotate 30s ease infinite;
+  -o-animation: rotate 30s ease infinite;
+  animation: rotate 30s ease infinite;
+}
+
+@-webkit-keyframes rotate {
+  0%{background-position:51% 0%}
+  50%{background-position:50% 100%}
+  100%{background-position:51% 0%}
+}
+@-moz-keyframes rotate {
+  0%{background-position:51% 0%}
+  50%{background-position:50% 100%}
+  100%{background-position:51% 0%}
+}
+@-o-keyframes rotate {
+  0%{background-position:51% 0%}
+  50%{background-position:50% 100%}
+  100%{background-position:51% 0%}
+}
+@keyframes rotate {
+  0%{background-position:51% 0%}
+  50%{background-position:50% 100%}
+  100%{background-position:51% 0%}
 }
