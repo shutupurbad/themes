@@ -25,6 +25,9 @@
 
 :root {
   /* epic rainbow border */
+  --Thickness:5px;
+  --Speed:6s;
+  /* -------------------------------------- */
   --mention-hue: 187;
   --columns:			2;							/* default:	3					(amount of servercolumns)																		*/
 	
@@ -1141,4 +1144,53 @@ html.theme-dark .force-theme.theme-light {
   0%{background-position:51% 0%}
   50%{background-position:50% 100%}
   100%{background-position:51% 0%}
+}
+
+/* rainbow border */  
+.appMount-3lHmkl{
+    margin:var(--Thickness);
+    width:calc(100% - calc(var(--Thickness) * 2))!important;
+    height:calc(100% - calc(var(--Thickness) * 2))!important;
+}
+.platform-osx, .appMount-3lHmkl{
+    border-radius:6px;
+}
+body{
+    background-image: linear-gradient(to left, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+    animation: gradient-border var(--Speed) lineaar infinite;
+    background-size: 400% 100%;
+    color: transparent !important;
+  }
+@keyframes gradient-border {
+      0%, 200% {
+        background-position: 0 0;
+    }
+  
+      99.999999999999999% {
+        background-position: 130% 0;
+    }
+}
+.platform-osx, .appMount-3lHmkl {
+    background: linear-gradient(181deg, #ff0000, #ff8e00, #00ff19, #1600ff, #a800ff);
+    background-size: 1000% 1000%;
+
+    -moz-animation: gradient-border 30s ease infinite;
+    -o-animation: gradient-border 30s ease infinite;
+    animation: gradient-border 30s ease infinite;
+}
+
+@-moz-keyframes gradient-border {
+    0%{background-position:51% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:51% 0%}
+}
+@-o-keyframes gradient-border {
+    0%{background-position:51% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:51% 0%}
+}
+@keyframes gradient-border {
+    0%{background-position:51% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:51% 0%}
 }
