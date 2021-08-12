@@ -1,4 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
 <title>Embed test</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="idk what to put as description">
 <meta name="referrer" content="origin-when-cross-origin">
+<head>
+    <title>Tropicalify - best site</title>
+</head>
+<body>
+Your avatar url
+    <input id="avatar"></input>
+    <button onclick="myCanvas()">just spam me lol</button>
+    <canvas id="myCanvas" width="300" height="300">
+    <img id="img"></img>
+    <img id="tropical" src="https://media.discordapp.net/attachments/841369023115821066/846417412105699348/tropical.png?width=676&height=676"></img>
+
+    <script>
+    function myCanvas() {
+    document.querySelector("button").click()
+  var c = document.getElementById("myCanvas");
+  var ctx = c.getContext("2d");
+  var img = document.getElementById("img");
+  var trop = document.getElementById("tropical");
+  img.src = document.getElementById("avatar").value.replace("webp", "png")
+  ctx.drawImage(img,0,0,300, 300);
+  ctx.drawImage(trop,0,0, 300,300);
+}
+    </script>
+</body>
+</html>
