@@ -15,10 +15,41 @@
     color: white;
     font-family: sans-serif;
 }
+        .buttonround {
+    display: inline-block;
+    height: 40px;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    font-family: Metropolis-Bold, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    border-radius: 7px;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    color: rgb(255, 255, 255) !important;
+    background: #012640;
+    padding: 8px 22px;
+    cursor: pointer;
+}
+
+.buttonround:hover {
+    background: #011f35;
+}
         </style>
 Your avatar url
     <input id="avatar"></input>
-    <button onclick="myCanvas()">just spam me lol</button>
+    <button onclick="myCanvas()" class="buttonround">just spam me lol</button>
     <canvas id="myCanvas" width="300" height="300">
     <img id="img"></img>
     <img id="tropical" src="https://media.discordapp.net/attachments/841369023115821066/846417412105699348/tropical.png?width=676&height=676"></img>
