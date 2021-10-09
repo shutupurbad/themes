@@ -55,11 +55,11 @@
   /*set below to 0 to not have a divider*/
   --cu-divider: 1;
   /* For UserStatus */
-  --online:#05c46e;
-  --dnd:#ff0000;
-  --idle:#fea100;
-  --offline:rgb(83, 86, 91);
-  --streaming:rgb(107, 27, 244);
+  --online:#00ff8cde;
+  --dnd:#e04343;
+  --idle:#ffbb46;
+  --offline:rgb(46, 45, 45);
+  --streaming:rgb(106, 20, 255);
   --accentcolor:			0,60,255;		/*	blurple		-	default:	114,137,218		*/
 	--accentcolor2:			225,115,180;	/*	boostpink	-	default:	255,115,250		*/
   /* Change as you wish */
@@ -999,58 +999,6 @@ html.theme-dark .force-theme.theme-light {
     content: "📂";    
     padding-left: 50px;
     text-align: right;
-}
-
-/*user popout update*/
-
-.profileBanner-33-uE1 {
-  background: none;
-}
-
-.avatarWrapperNormal-2tu8Ts {
-  left: 35%;
-}
-
-.headerTop-2y3V6H > .profileBadges-1dm1_q {
-  display: none;
-}
-
-.headerText-2WJ44e {
-  text-align: center;
-}
-
-.username-2b1r56.headerTagUsernameNoNickname-1SSLBc.headerTagUsernameBase-12nwcw {
-  overflow: hidden;
-}
-
-#app-mount .profileBanner-33-uE1, .banner-2QYc2d {
-  display: none;
-}
-
-#app-mount .avatar-22FtUu {
-  margin-top: -20px;
-  margin-left: -100px;
-  padding: 1px;
-}
-
-#app-mount .headerTagNoNickname-3ak9o8 .headerTag-nSOkYt, .size14-3iUx6q, .size20-2QkeeC {
-  font-size: 16px;
-  margin-left: 100px;
-  margin-top: -30px;
-}
-
-#app-mount .nickname-322DbL {
-  position: absolute;
-}
-
-.date-YN6TCS {
-  user-select: text;
-}
-
-.avatarHint-1E3LMl {
-  margin-top: -20px;
-  margin-left: -100px;
-  padding: 1px;
 }
 
 /*view profile modal rounding*/
